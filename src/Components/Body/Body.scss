@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin :0;
+    padding: 0;
+}
+.banner-slide
+{
+    width: 100%;
+    height: 900px;
+    position: relative;
+  
+}
+ .banner-slide .image-banner
+{
+    z-index: 1;
+    width: 100%;
+    height: 800px;
+    position:absolute;
+    clip-path: circle(0% at 0 50%);
+    transition: all 2s linear ;
+}
+.banner-slide .image-banner.active
+{
+    clip-path: circle(200% at 0 100%);
+    width: 100%;
+    
+}
+.image-banner img
+{
+    width: 100%;
+    height: 900px;
+}
+.title-heading
+{
+    z-index:1
+}
+.h1-banner
+{
+    font-size: 80px;
+    text-transform: capitalize;
+    color: white;
+   
+}
+
+.h4-banner
+{
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+    margin-top: 2%;
+}
+.btn-banner
+{
+    width: 206px;
+    height: 65px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-top: 5%;
+}
+.title-heading
+{
+    width: 35%;
+    position: absolute;
+    top:40%;
+    left:12.5%
+}
+.icon-banner
+{
+    position: absolute;
+    bottom:-30px;
+    left: -12px;
+}
+.iconBanner
+{
+    color: white;
+    margin-left: 40px;
+    font-size: 16px;
+   
+}
+
+.logo-partner
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.image-logo
+{
+    position:relative;
+    width: 149.6px;
+    height: 100px;
+    overflow: hidden;
+    margin-left: 25%;
+}
+.img-logo-front
+{
+   position: absolute;
+   top:12%;
+   transition:top .5s linear; 
+}
+.image-logo:hover .img-logo-front
+{
+    top:100%;    
+}
+.img-logo-back
+{
+    position: absolute;
+    bottom:112%;
+    transition: bottom .5s linear;  
+}
+.product-item-text
+{
+    width: 400px;
+    height: 246px;
+}
+.product-item-text h3
+{
+    color:white;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top:18%
+}
+.productItem{
+    width: 400px;
+    height: 246px;
+    position: relative;
+    overflow: hidden;
+}
+.productItem img
+{
+    width: 100%;
+    height:100%;
+    transition: .58s ease-in-out;
+    display: block;
+    position: absolute;
+}
+.img-product:hover{
+   
+    transform: scale(1.2);
+}
+.product-item
+{
+    width: 1200px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 80px;
+    background-color: black;
+    gap :12px;
+    margin-bottom: 7%;
+}
+.product
+{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.text-item{
+    color: white;
+    font-size: 24px;
+    position:absolute;
+    font-weight: bold;
+    top:75%;
+    left:30px    
+}
+.background-mid
+{
+   width: 100%;
+    height: 640px;
+    position: relative;
+    overflow: hidden;
+}
+.img-background
+{
+    width: 100%;
+    max-height: 100%;
+    transform: scaleY(1.8);
+    position: absolute;
+    
+}
+.text-background
+{
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+}
+.btn-background
+{
+    width: 168px;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 35%;
+    cursor: pointer;
+}
+.btn-background:hover
+{
+    background-color: white;
+    color: black;
+}
+.textButtonBackground
+{
+    position:absolute;
+    bottom:40%;
+    width: 600px;
+    left: 35%;
+}
+.textMid{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.text-mid
+{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 1200px;
+    padding: 8% 20px;
+}
+.text-mid-child h1
+{
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+}
+.text-mid-child h3
+{
+    color: white;
+    font-size: 24px;
+    line-height: 40px;
+}
+.text-mid-child h6
+{
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+}
+.productIntroduce
+{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.product-introduce
+{
+    width: 1200px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.text-product-introduce
+{
+    width: 400px;
+    height: 84px;
+}
+.text-introduce-heading
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.text-product-introduce h1
+{
+    color:white;
+    font-size: 40px;
+    line-height: 60px;
+}
+.text-introduce-heading h4
+{
+    color:white;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: lighter;
+}
+.imgIntroduce
+{
+   
+    margin-left: 2%;
+   width: 1119px;
+   height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.img-introduce-slide img
+{
+    max-width: 800px;
+   max-height: 100%;
+}
+.img-introduce-slide
+{
+  width: 100%;  
+  height: 400px;
+}
+.img-introduce
+{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap:40px;
+   position: absolute; 
+   width: 1119px;  
+    height: 400px;
+    transition: all 1.2s ease-in-out;
+}
+
+.icon-introduce
+{
+    width: 222px;
+    height: 50px;
+    position:absolute;
+    top:70%;
+    display:flex
+}
+.iconIntroduceLeft
+{
+    color: white;
+    font-size: 24px;
+    background-color: transparent;
+    margin-right: 2%;
+}
+.iconIntroduceRight
+{
+    color: white;
+    font-size: 24px;
+    margin-left:2%;
+    background-color: transparent;
+}
+.number-introduce
+{
+    font-size: 16px;
+    color: white;
+    float: right;
+    margin-left: 275%;
+    line-height: 60px;
+}
